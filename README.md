@@ -35,4 +35,46 @@ The app allows evaluators to quickly detect filled bubbles, assign scores based 
 ---
 
 ## 📂 Project Structure
+Cyber-OMR-Scorer/
+│
+├─ answer_keys/ # JSON answer key files
+│ └─ setA.json
+│
+├─ results/ # Generated CSV outputs
+│ └─ omr_scored_results.csv
+│
+├─ omr_dashboard.py # Main Streamlit application
+├─ requirements.txt # Dependencies list
+├─ README.md # Project documentation
+└─ .gitignore # Ignored files/folders
+
+
+
+---
+
+## ⚡ How to Run
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/<your-username>/Cyber-OMR-Scorer.git
+   cd Cyber-OMR-Scorer
+2. Create a virtual environment (optional but recommended)
+
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate
+
+3. Install dependencies
+
+pip install -r requirements.txt
+
+4. Run the Streamlit app
+
+streamlit run omr_dashboard.py
+
+
+---
+
+⚡ Do you also want me to make a **`.gitignore` file content** for this repo (to ignore things like `venv/`, `__pycache__/`, `results/`, etc.)?
+
 
